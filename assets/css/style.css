@@ -1,0 +1,186 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Inter:wght@300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans&display=swap');
+*{
+  padding:0;
+  margin:0;
+  box-sizing: border-box;
+  font-family: 'Nunito Sans', sans-serif;
+}
+body{
+  background-color:#f7f8fc;
+}
+
+.logo:hover{
+  text-decoration: none;
+}
+.wrapper{
+  display: grid;
+  grid-template-areas: 
+  "nav nav nav"
+  "aside main main"
+  "aside main main";
+  grid-template-columns:200px 1fr 1fr;
+  column-gap:60px;
+}
+
+.wrapper nav{
+    grid-area: nav;
+    width: 100%;
+    height: 120px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    background-color: #fff;
+    padding-left:48px;
+    /* box-shadow: rgba(50, 50, 93, 0.25) 0px 1px 1px -1px, rgba(0, 0, 0, 0.3) 0px 1px 1px -1px; */
+}
+
+.wrapper nav a{
+  display:flex;
+  flex-direction:column;
+  justify-content: center;
+  align-items: center;
+  color:#000;
+}
+
+.wrapper nav a span:nth-child(1){
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 900;
+  font-size: 32px;
+}
+
+.wrapper nav a span:nth-child(2){
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  margin-top:-10px;
+}
+
+.wrapper aside{
+  grid-area: aside;
+  width: 256px;
+  height: 100%;
+  margin:20px;
+  background-color: #fff;
+}
+
+.wrapper aside ul{
+  list-style:none;
+  width:100%;
+  height:100%;
+  display:flex;
+  justify-content:start;
+  align-items:start;
+  flex-direction:column;
+  padding-top:40px;
+  gap:10px;
+}
+
+
+
+.wrapper aside ul li a{
+  font-family: 'DM Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  color: #000;
+  text-decoration: none;
+  width:200px;
+  height:40px;
+  border-radius:28px;
+  padding:16px 48px;
+  background:#1a9425;
+  display:grid;
+  place-content: center;
+  transition:.3s;
+  cursor:pointer;
+  color:#fff; 
+}
+
+.wrapper aside ul li a:hover{
+  background:#136d1a;
+}
+
+.active{
+  background:#005007 !important;
+}
+
+.wrapper aside ul li a:hover{
+  text-decoration: none;
+}
+.wrapper main{
+  grid-area: main;
+  height: 100vh;
+  margin:20px;
+}
+
+.btn-add-alternatif{
+  width:166px;
+  height:40px;
+  border-radius:32px;
+  padding:8px 16px;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  gap:8px;
+  background:#1a9425;
+  color:#fff;
+  text-decoration:none;
+  transition:.3s;
+  margin-bottom:24px;
+}
+
+.btn-add-alternatif:hover{
+  color:#fff;
+  text-decoration:none;
+  background:#146e1c;
+}
+
+.btn-hapus{
+  width:82px;
+  height:26px;
+  padding:4px 8px;
+  background-color:#ef5d5d;
+  color:#fff;
+  border-radius: 4px;
+  font-family: 'DM Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  transition:.2s;
+}
+
+.btn-edit{
+  width:82px;
+  height:26px;
+  padding:4px 8px;
+  color:#000;
+  border: 1px solid rgb(157, 156, 156);
+  border-radius: 4px;
+  font-family: 'DM Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  transition:.2s;
+}
+
+.btn-hapus:hover{
+  text-decoration:none;
+  color:#fff;
+  background:#ae4444;
+}
+.btn-edit:hover{
+  text-decoration:none;
+  color:#fff;
+  background:#000000;
+}
+
+.table{
+  font-size: 14px;
+}
+
+.table td{
+  line-height: 2rem !important;
+}
